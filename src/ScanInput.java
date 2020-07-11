@@ -25,13 +25,17 @@ public class ScanInput {
         num2 = nums.get(1);
         act = acts.get(0);
         switch (act){
-            case "+": Addition.addition(num1, num2);
+            case "+":
+                System.out.println(Addition.addition(num1, num2));
             break;
-            case "-": Subtraction.subtraction(num1, num2);
+            case "-":
+                System.out.println(Subtraction.subtraction(num1, num2));
             break;
-            case "*": Multiplication.multiplication(num1, num2);
+            case "*":
+                System.out.println(Multiplication.multiplication(num1, num2));
             break;
-            case "/": Division.division(num1, num2);
+            case "/":
+                System.out.println(Division.division(num1, num2));
             break;
             default:
                 System.out.println("Wrong input");

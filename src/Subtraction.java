@@ -1,6 +1,6 @@
 public class Subtraction {
-    public static void subtraction(int a, int b){
+    public static int subtraction(int a, int b){
         int result = a - b;
-        System.out.println(result);
+        return result;
     }
 }
