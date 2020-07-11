@@ -4,6 +4,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ScanInput {
+    static int num1;
+    static int num2;
+    static String act;
     public static void scanInput(String input){
         List<Integer> nums = new ArrayList<>();
         List<String> acts = new ArrayList<>();
@@ -18,11 +21,21 @@ public class ScanInput {
         while(mAct.find()){
             acts.add(mAct.group());
         }
-        for(int i:nums){
-            System.out.println(i);
-        }
-        for(String s:acts){
-            System.out.println(s);
+        num1 = nums.get(0);
+        num2 = nums.get(1);
+        act = acts.get(0);
+        switch (act){
+            case "+": Addition.addition(num1, num2);
+            break;
+            case "-": Subtraction.subtraction(num1, num2);
+            break;
+            case "*": Multiplication.multiplication(num1, num2);
+            break;
+            case "/": Division.division(num1, num2);
+            break;
+            default:
+                System.out.println("Wrong input");
+                break;
         }
     }
 }
