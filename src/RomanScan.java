@@ -26,16 +26,16 @@ public class RomanScan {
         num2 = Converter.romanToArabic(nums.get(1));
         act = acts.get(0);
         switch (act){
-            case "+": result = Addition.addition(num1, num2);
+            case "+": result = ArithmeticService.addition(num1, num2);
                 System.out.println(Converter.arabicToRoman(result));
                 break;
-            case "-": result = Subtraction.subtraction(num1, num2);
+            case "-": result = ArithmeticService.subtraction(num1, num2);
                 System.out.println(Converter.arabicToRoman(result));
                 break;
-            case "*": result = Multiplication.multiplication(num1, num2);
+            case "*": result = ArithmeticService.multiplication(num1, num2);
                 System.out.println(Converter.arabicToRoman(result));
                 break;
-            case "/": result = Division.division(num1, num2);
+            case "/": result = ArithmeticService.division(num1, num2);
                 System.out.println(Converter.arabicToRoman(result));
                 break;
             default:

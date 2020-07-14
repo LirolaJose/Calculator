@@ -26,16 +26,16 @@ public class ScanInput {
         act = acts.get(0);
         switch (act){
             case "+":
-                System.out.println(Addition.addition(num1, num2));
+                System.out.println(ArithmeticService.addition(num1, num2));
             break;
             case "-":
-                System.out.println(Subtraction.subtraction(num1, num2));
+                System.out.println(ArithmeticService.subtraction(num1, num2));
             break;
             case "*":
-                System.out.println(Multiplication.multiplication(num1, num2));
+                System.out.println(ArithmeticService.multiplication(num1, num2));
             break;
             case "/":
-                System.out.println(Division.division(num1, num2));
+                System.out.println(ArithmeticService.division(num1, num2));
             break;
             default:
                 System.out.println("Wrong input");

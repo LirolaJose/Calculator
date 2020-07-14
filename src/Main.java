@@ -5,8 +5,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main {
-    public static void main(String arg[]) throws IOException {
-        System.out.println("Please, write nums and operation.");
-        InputString.inputString();
+    public static void main(String arg[]) throws Exception {
+        System.out.println("Please, enter 2 numbers from 1 to 10 in Arabic or Roman numerals and enter the desired action.");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String input = reader.readLine();
+        CheckInput.checkInput(input);
     }
 }
