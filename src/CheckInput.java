@@ -10,7 +10,7 @@ public class CheckInput {
         Matcher romanMatch = romanInput.matcher(input);
         try {
             if (mInput.find()) {
-                ScanInput.scanInput(mInput.group());
+                ScanInput.scanInput(input);
             } else if (romanMatch.find()) {
                 RomanScan.romanScan(input);
             } else {
